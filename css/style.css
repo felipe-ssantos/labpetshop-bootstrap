@@ -1,0 +1,16 @@
+        /* ícone lupa na barra de pesquisa */
+        form.form-inline input[type="search"] {
+            background-image: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/icons/search.svg");
+            background-position: 5px center;
+            background-repeat: no-repeat;
+            padding-left: 1.8em;
+            /* adiciona um espaçamento para o ícone */
+            background-size: 16px;
+        }
+
+        /* Efeito para esconder o ícone lupa ao clicar */
+        form.form-inline input[type="search"]:focus {
+            background-image: none;
+            padding-left: 0.5em;
+            padding-left: 25px;
+        }
