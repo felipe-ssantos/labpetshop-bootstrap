@@ -1,9 +1,9 @@
 <p align="center">
-  <img alt="logo da barbearia alura" src="./imagens/logo-labpetshop-branco.png">
+  <img alt="logo da barbearia alura" src="./img/logo-labpetshop-branco.png">
 </p>
 
 <h1 align="center">
-    <img alt="Página de divulgação Alura Plus" title="Alura-Plus" src="./imagens/home.png" />
+    <img alt="Página de divulgação Alura Plus" title="Alura-Plus" src="./img/home.png" />
 </h1>
 
 ------
