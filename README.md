@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Página de divulgação Alura Plus" title="Alura-Plus" src="./img/home.png" />
+    <img alt="Página de divulgação lABPETSHOP" title="LABPETSHOP" src="./img/home.png" />
 </h1>
 
 ------
