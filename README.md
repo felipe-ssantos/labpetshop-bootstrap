@@ -1,9 +1,9 @@
 <p align="center">
-  <img alt="logo da barbearia alura" src="./img/logo-labpetshop-branco.png">
+  <img alt="logo da labpetshop" src="./img/logo-labpetshop-branco.png">
 </p>
 
 <h1 align="center">
-    <img alt="Página de divulgação lABPETSHOP" title="LABPETSHOP" src="./img/home.png" />
+    <img alt="Página de divulgação LABPETSHOP" title="LABPETSHOP" src="./img/home.png" />
 </h1>
 
 ------
@@ -14,33 +14,46 @@
 
 ## 💻 Sobre o projeto
 
-Nessa atividade construí uma aplicação Web **utilizando HTML, CSS e Bootstrap CDN** seguindo as especificações da atividade. Usar preferencialmente uma folha de estilos externa para as configurações gerais e utilizar **CSS inline apenas em casos pontuais**, caso necessário. Priorizar o uso de componentes do Bootstrap, ao invés dos componentes padrões do HTML.
+Esse projeto foi desenvolvido como parte de uma atividade proposta pela Universidade Anhembi Morumbi, com o objetivo de construir uma aplicação Web, ou seja, construir um site para um PetShop, utilizando as tecnologias HTML5, CSS3 e Bootstrap. O site inclui diversas seções, conforme as especificações da atividade.
 
-- a) Criar uma seção para produtos e serviços comercializados. Selecione pelo menos 10 produtos e 3 serviços disponíveis no seu PetShop;
-- b) Contato da loja (endereço, e-mail e telefone);
-- c) Uma seção que explica a história do PetShop;
-- d) Uma seção de depoimento de clientes;
-- e) Um rodapé com os direitos do conteúdo do site produzido.
+### Especificações
 
-
-## 🛠 Tecnologias utilizadas
+- Seção de Produtos e Serviços
+  - A seção de produtos e serviços deve incluir pelo menos 10 produtos e 3 serviços disponíveis no PetShop. Para isso, foi utilizada uma combinação de componentes do Bootstrap e HTML. O layout e o estilo foram definidos em um arquivo CSS externo.
+- Contato da Loja
+  - A seção de contato da loja deve incluir o endereço, e-mail e telefone. Essas informações foram incluídas em uma seção específica, utilizando as tags HTML apropriadas e estilo definido no arquivo CSS externo.
+ - História do PetShop
+    - A seção que explica a história do PetShop foi construída utilizando tags HTML apropriadas e estilo definido no arquivo CSS externo. Foi incluída uma breve história do PetShop, com o objetivo de apresentar a empresa aos clientes em potencial.
+ - Depoimentos de Clientes
+    - A seção de depoimentos de clientes foi incluída com o objetivo de transmitir confiança aos clientes em potencial. Foram incluídos depoimentos fictícios utilizando as tags HTML apropriadas e estilo definido no arquivo CSS externo.
+  
+ ---
+ 
+ ## 🛠 Ferramentas
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-------
+---
 
 ## 🎨 Framework utilizado
 
 - [Bootstrap 4.3 CDN](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 
-------
+---
 
-## 📝 License
+## Autor
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Este projeto foi desenvolvido por N.F.S.S. Você pode encontrar mais informações sobre mim em [https://github.com/nfss/](https://github.com/nfss/).
+
+## Conclusão
+
+Este projeto foi concluído com sucesso e atendeu a todas as especificações solicitadas. O código-fonte está disponível em [https://github.com/nfss/petshop-website](https://github.com/nfss/petshop-website).
 
 ---
 
-<p align="center">Desenvolvido por 💜 N.F.S.S👋</p>
+## 📝 License
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
+
+---
