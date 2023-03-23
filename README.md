@@ -2,6 +2,8 @@
   <img alt="logo da labpetshop" src="./img/logo-labpetshop-branco.png">
 </p>
 
+## 📷 Screenshots
+
 <h1 align="center">
     <img alt="Página de divulgação LABPETSHOP" title="LABPETSHOP" src="./img/home.png" />
 </h1>
@@ -45,6 +47,14 @@ Esse projeto foi desenvolvido como parte de uma atividade proposta pela Universi
 ## Autor
 
 Este projeto foi desenvolvido por N.F.S.S. Você pode encontrar mais informações sobre mim em [https://github.com/nfss/](https://github.com/nfss/).
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do repositório, fazer suas modificações e submeter um pull request.
+
+---
 
 ## Conclusão
 
