@@ -46,7 +46,7 @@ Esse projeto foi desenvolvido como parte de uma atividade proposta pela Universi
 
 ## Autor
 
-Este projeto foi desenvolvido por N.F.S.S. Você pode encontrar mais informações sobre mim em [[https://github.com/nfss/](https://github.com/felipe-ssantos)]([https://github.com/nfss/](https://github.com/felipe-ssantos)).
+Este projeto foi desenvolvido por N.F.S.S. Você pode encontrar mais informações sobre mim em [https://github.com/felipe-ssantos](https://github.com/felipe-ssantos).
 
 ---
 
