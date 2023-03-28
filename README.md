@@ -58,7 +58,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do repos
 
 ## Conclusão
 
-Este projeto foi concluído com sucesso e atendeu a todas as especificações solicitadas. O código-fonte está disponível em [https://github.com/felipe-ssantos/petshop-website](https://github.com/felipe-ssantos/petshop-website).
+Este projeto foi concluído com sucesso e atendeu a todas as especificações solicitadas.
 
 ---
 
