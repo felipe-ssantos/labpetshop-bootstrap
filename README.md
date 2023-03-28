@@ -50,12 +50,6 @@ Este projeto foi desenvolvido por N.F.S.S. Você pode encontrar mais informaçõ
 
 ---
 
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do repositório, fazer suas modificações e submeter um pull request.
-
----
-
 ## Conclusão
 
 Este projeto foi concluído com sucesso e atendeu a todas as especificações solicitadas.
