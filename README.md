@@ -50,9 +50,9 @@ Este projeto foi desenvolvido por N.F.S.S. Você pode encontrar mais informaçõ
 
 ---
 
-## Conclusão
+## Licença
 
-Este projeto foi concluído com sucesso e atendeu a todas as especificações solicitadas.
+Unlicense
 
 ---
 
