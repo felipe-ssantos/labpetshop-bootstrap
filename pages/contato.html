@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/eff067e088.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
@@ -18,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logo-labpetshop-branco.png" alt="Logo da Loja Lab Pet Shop"> <!-- Logotipo -->
+                    <img src="../img/logo-labpetshop-branco.png" alt="Logo da Loja Lab Pet Shop">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,12 +29,12 @@
                             <a class="nav-link" href="../index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/produtos.html">Produtos &amp; Serviços</a>
+                            <a class="nav-link" href="../pages/produtos.html">Produtos & Serviços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="../pages/contato.html">Contato</a>
                         </li>
-                        <li class="nav-item" style="margin: 0 8px;">
+                        <li class="nav-item search-container">
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
                                     aria-label="Pesquisar">
@@ -49,11 +48,11 @@
     </header>
     <!-- Fim menu -->
 
-    <!-- Formulário -->
+    <!-- Seção contato -->
     <main class="py-4">
         <div class="container my-4">
             <div class="row">
-                <div class="col-md-6">
+                <section class="col-md-6 contact-form">
                     <h2>Tem alguma dúvida? Envie sua mensagem...</h2>
                     <form>
                         <fieldset>
@@ -112,75 +111,67 @@
 
                             <div class="form-group">
                                 <label for="messageTextarea">Mensagem</label>
-                                <textarea class="form-control" id="messageTextarea" rows="5" style="height: 252px;"
-                                    required></textarea>
+                                <textarea class="form-control" id="messageTextarea" rows="5" required></textarea>
                             </div>
 
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="novidadesCheckbox" checked>
                                 <label class="form-check-label" for="novidadesCheckbox">Gostaria de receber nossas
-                                    novidades
-                                    por e-mail?</label>
+                                    novidades por e-mail?</label>
                             </div>
 
-                            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paw"></i>
-                                Enviar</button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-paw"></i> Enviar
+                            </button>
                         </fieldset>
                     </form>
+                </section>
 
-                </div>
-                <!-- Fim do formulário -->
-
-                <!-- iframe com localização -->
-                <div class="col-12 col-md-5 mt-4">
+                <!-- Maps -->
+                <section class="col-12 col-md-5 mt-4 location-section">
                     <h2>Encontre nós aqui</h2>
                     <p class="m-0 p-2 bg-light">Localização Fictícia</p>
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7316.4947221456205!2d-46.613045!3d-23.523604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58ea9d0d27d3%3A0xb752ab620375d11e!2sPetz!5e0!3m2!1spt-BR!2sus!4v1676409845652!5m2!1spt-BR!2sus"
-                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            allowfullscreen title="Localização da Lab Pet Shop"></iframe>
                     </div>
-                    <div class="bg-light">
-                        <!-- Imagens gratuitas e aletórias da API do site: https://unsplash.com/ -->
+                    <div class="bg-light promotional-image">
                         <h6 class="mt-4">Imagem promocional aleatória</h6>
-                        <img class="img-fluid mt-2" style="width: 550px; height: 500px;"
-                            src="https://source.unsplash.com/random/550x500/?pet" alt="Imagem Promocional aleatória">
+                        <img class="img-fluid mt-2"
+                            src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?q=80&w=550&h=500&fit=crop&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Imagem com um cão usando oculos de sol">
                     </div>
-                </div>
-                <!-- Fim iframe -->
+                </section>
             </div>
         </div>
     </main>
 
-    <!--  Rodapé -->
+    <!-- Footer -->
     <footer class="bg-dark text-light py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="m-0">&copy; Lab Pet Shop - Todos os direitos reservados</p>
+                    <p class="m-0">© Lab Pet Shop - Todos os direitos reservados</p>
                     <p class="m-0">Desenvolvido por <a href="https://github.com/felipe-ssantos">N.F.S.S</a></p>
                 </div>
-                <div class="col-md-6 text-md-right">
+                <div class="col-md-6 text-md-right contact-info">
                     <p class="m-0">Av. Pres. Castelo Branco, 1795 - Pari, São Paulo - SP, 03035-050, Brasil</p>
                     <p class="m-0">Telefone: +55 (11) 0000-0000</p>
-                    <!-- icones de rede sociais -->
                     <div class="social-icons mt-2">
-                        <a href="#" target="_blank"><i class="fab fa-instagram fa-lg" style="color: #fff;"></i></a>
-                        &nbsp;&nbsp;
-                        <a href="#" target="_blank"><i class="fab fa-youtube fa-lg" style="color: #fff;"></i></a>
-                        &nbsp;&nbsp;
-                        <a href="#" target="_blank"><i class="fab fa-facebook fa-lg" style="color: #fff;"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Script fontawesome para icons -->
     <script src="https://kit.fontawesome.com/eff067e088.js" crossorigin="anonymous"></script>
 </body>
 

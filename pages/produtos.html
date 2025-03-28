@@ -8,34 +8,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/eff067e088.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
     <!-- Menu -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logo-labpetshop-branco.png" alt="Logo da Loja Lab Pet Shop"> <!-- Logotipo -->
+                    <img src="../img/logo-labpetshop-branco.png" alt="Logo da Loja Lab Pet Shop">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../pages/produtos.html">Produtos &amp; Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contato.html">Contato</a>
-                        </li>
-                        <li class="nav-item" style="margin: 0 8px;">
-                            <form class="form-inline my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../pages/produtos.html"
+                                aria-current="page">Produtos &amp; Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contato.html">Contato</a></li>
+                        <li class="nav-item search-container">
+                            <form class="form-inline my-2 my-lg-0" role="search">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
                                     aria-label="Pesquisar">
                                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
@@ -49,311 +43,398 @@
     <!-- Fim menu -->
 
     <!-- Seção serviços -->
-    <main class="py-5">
-        <section class="py-5">
+    <main role="main">
+        <section class="services py-5">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-2">
-                        <img src="../img/imagens-servicos.png" alt="Imagem com serviços oferecidos pelo PetShop"
-                            class="d-block w-100">
-                    </div>
-                    <div class="col-md-6 order-md-1">
+                    <hgroup class="col-md-6 order-md-1">
                         <h1>Nossos Serviços</h1>
                         <p class="lead">Temos tratamento veterinário, hospedagem, delivery, banhos, hidratação, tosa na
                             máquina, tosa na tesoura, tosa higiênica,
                             desembaraçamento, tingimento dos pelos, escovação de dentes, limpeza de ouvido e corte de
                             unhas. Nos faça uma visita e confira!</p>
-                    </div>
+                    </hgroup>
+                    <figure class="col-md-6 order-md-2">
+                        <img src="../img/imagens-servicos.png" alt="Imagem com serviços oferecidos pelo PetShop"
+                            class="d-block w-100">
+                    </figure>
                 </div>
             </div>
         </section>
+
         <!-- Seção Produtos -->
-        <div class="container bg-light py-2">
-            <div class="row">
-                <div class="col-md-6">
+        <section class="products">
+            <div class="container bg-light py-2">
+                <header>
                     <h2>Produtos</h2>
-                </div>
+                </header>
             </div>
-        </div>
-        <section class="py-5">
+
             <div class="container">
                 <div class="row">
-                    <!-- Produto 01 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto01.jpg" class="card-img-top"
-                                alt="Produto 1: Tapete Higiênico, Petlike Ultra Pads">
-                            <div class="card-body">
-                                <h5 class="card-title">Tapete Higiênico, Petlike Ultra Pads</h5>
+                    <!-- Produto 1 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto01.jpg" class="card-img-top"
+                                    alt="Tapete Higiênico, Petlike Ultra Pads" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Tapete Higiênico, Petlike Ultra Pads</h3>
                                 <ul class="card-text">
                                     <li>Possui atrativo canino;</li>
                                     <li>Com adesivos para fixação;</li>
                                     <li>Ideal para cães de pequeno e médio porte.</li>
                                     <li>Alta absorção.</li>
                                 </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 64,90</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="64.90">R$ 64,90</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 02 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto02.jpg" class="card-img-top"
-                                alt="Produto 2: Remédio para cães, elimina pulgas e carrapatos">
-                            <div class="card-body">
-                                <h5 class="card-title">Bravecto Cães de 2 até 4.5kg Bravecto para Cães</h5>
+                    </article>
 
+                    <!-- Produto 2 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto02.jpg" class="card-img-top" alt="Bravecto Cães de 2 até 4.5kg"
+                                    itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Bravecto Cães de 2 até 4.5kg</h3>
                                 <ul class="card-text">
                                     <li>Rápida ação: Elimina pulgas e carrapatos em até 12 horas;</li>
                                     <li>Conveniência: 1 única dose para 12 semanas de proteção;</li>
+                                    <li>Ideal para cães de pequeno e médio porte.</li>
                                     <li>Sabor de fígado suíno.</li>
                                 </ul>
-
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 118,97</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="118.97">R$ 118,97</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 03 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto03.jpg" class="card-img-top"
-                                alt="Produto 3: Fonte para Gatos Aqua Mini Bivolt na cor Azul">
-                            <div class="card-body">
-                                <h5 class="card-title">Fonte para Gatos Aqua Mini Bivolt Azul Amicus</h5>
+                    </article>
 
+                    <!-- Produto 3 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto03.jpg" class="card-img-top"
+                                    alt="Fonte para Gatos Aqua Mini Bivolt Azul Amicus" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Fonte para Gatos Aqua Mini Bivolt Azul Amicus
+                                </h3>
                                 <ul class="card-text">
                                     <li>Com filtro de carvão ativado;</li>
                                     <li>Dispositivo de bomba submersa;</li>
                                     <li>Se adapta em ambientes pequenos e grandes;</li>
                                     <li>Durabilidade.</li>
                                 </ul>
-
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 78,88</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="78.88">R$ 78,88</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 04 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto04.jpg" class="card-img-top"
-                                alt="Produto 4: Comedouro GermanHart Dual Azul G 950ml">
-                            <div class="card-body">
-                                <h5 class="card-title">Comedouro GermanHart Dual Azul G 950ml</h5>
+                    </article>
+
+                    <!-- Produto 4 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto04.jpg" class="card-img-top"
+                                    alt="Comedouro GermanHart Dual Azul G 950ml" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Comedouro GermanHart Dual Azul G 950ml</h3>
                                 <ul class="card-text">
                                     <li>Comedouros em aço inoxidável;</li>
                                     <li>Base larga, com anel de silicone, previne tombamento e derrapagens;</li>
                                     <li>Material a prova de ferrugem, bactérias, manchas e impactos;</li>
                                     <li>Com base de silicone, dura muito mais.</li>
                                 </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 149,99</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="149.99">R$ 149,99</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 05 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto05.jpg" class="card-img-top"
-                                alt="Produto 5: Luva Remove Pelos Nano Magnética para Cães e Gatos">
-                            <div class="card-body">
-                                <h5 class="card-title">Luva Remove Pelos Nano Magnética para Cães e Gatos</h5>
-                                <ul>
-                                    <li>Conforto;</li>
-                                    <li>Fácil de usar;</li>
-                                    <li>Custo-benefício;</li>
-                                    <li>Luva para pentear e retirar o excesso de pelos;</li>
-                                    <li>Marca: PLP MANIA.</li>
-                                </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 89,99</span>
-                                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Produto 06 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto06.jpg" class="card-img-top" alt="Produto 6">
-                            <div class="card-body">
-                                <h5 class="card-title">Arranhador Rampa para Gatos, Pet Furacão</h5>
-                                <ul class="card-text">
-                                    <li>Ângulo perfeito para seu gatinho se acalmar e não arranhar mais seu sofá;</li>
-                                    <li>Pode ser usado para seu gato afiar suas unhas;</li>
-                                    <li> O arranhador faz com que seu gato relaxe elimine o stress.</li>
-                                </ul>
+                    </article>
 
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 49,90</span>
+                    <!-- Produto 5 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto05.jpg" class="card-img-top"
+                                    alt="Luva Remove Pelos Nano Magnética para Cães e Gatos" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Luva Remove Pelos Nano Magnética para Cães e
+                                    Gatos</h3>
+                                <ul class="card-text">
+                                    <li>Design ergonômico;</li>
+                                    <li>Tecnologia nano magnética;</li>
+                                    <li>Ideal para remoção de pelos;</li>
+                                    <li>Compatível com cães e gatos.</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="89.99">R$ 89,99</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 07 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto07.jpg" class="card-img-top"
-                                alt="Produto 7: Mordedor Corda com Osso Plástico, Cão Sanremo">
-                            <div class="card-body">
-                                <h5 class="card-title">Mordedor Corda com Osso Plástico, Cão Sanremo</h5>
+                    </article>
+
+                    <!-- Produto 6 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto06.jpg" class="card-img-top"
+                                    alt="Brinquedo interativo para cães" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Brinquedo Interativo para Cães</h3>
+                                <ul class="card-text">
+                                    <li>Estimula a atividade física;</li>
+                                    <li>Ajuda no desenvolvimento mental;</li>
+                                    <li>Material resistente;</li>
+                                    <li>Design ergonômico.</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="89.99">R$ 89,99</span>
+                                    </span>
+                                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 7 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto07.jpg" class="card-img-top"
+                                    alt="Mordedor Corda com Osso Plástico, Cão Sanremo" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Mordedor Corda com Osso Plástico, Cão Sanremo
+                                </h3>
                                 <ul class="card-text">
                                     <li>Exercita a mandíbula e a mordida do seu pet;</li>
-                                    <li>Possui ossinho de plástico que estimula o cão na hora de brincar.</li>
+                                    <li>Possui ossinho de plástico que estimula o cão na hora de brincar;</li>
+                                    <li>Material resistente;</li>
+                                    <li>Design interativo.</li>
                                 </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 21,89</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="49.90">R$ 49,90</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 08 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto08.jpg" class="card-img-top"
-                                alt="Produto 8: Porquinho de pelúcia Chalesco para Cães">
-                            <div class="card-body">
-                                <h5 class="card-title">Porquinho para Cães</h5>
+                    </article>
+
+                    <!-- Produto 8 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto08.jpg" class="card-img-top" alt="Mordedor Adicional"
+                                    itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Mordedor Adicional para Cães</h3>
                                 <ul class="card-text">
-                                    <li>Media Resistencia;</li>
+                                    <li>Auxilia no desenvolvimento da força da mandíbula;</li>
+                                    <li>Material resistente;</li>
+                                    <li>Design ergonômico;</li>
+                                    <li>Ideal para treinamento e brincadeiras.</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="21.89">R$ 21,89</span>
+                                    </span>
+                                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 9 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto09.jpg" class="card-img-top" alt="Porquinho para Cães"
+                                    itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Porquinho para Cães</h3>
+                                <ul class="card-text">
+                                    <li>Média Resistencia;</li>
                                     <li>Aroma Neutro;</li>
                                     <li>Brinquedos Macios e Resistentes;</li>
                                     <li>Emite o som do porquinho;</li>
                                     <li>Marca: Chalesco.</li>
                                 </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 79,99</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="79.99">R$ 79,99</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 09 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto09.jpg" class="card-img-top"
-                                alt="Produto 9: Bola de Borracha para Cães, Sanremo">
-                            <div class="card-body">
-                                <h5 class="card-title">Bola de Borracha para Cães, Sanremo</h5>
+                    </article>
+
+                    <!-- Produto 10 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto10.jpg" class="card-img-top"
+                                    alt="Bola de Borracha para Cães, Sanremo" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Bola de Borracha para Cães, Sanremo</h3>
                                 <ul class="card-text">
                                     <li>Possui um formato ideal para jogar, brincar e morder à vontade;</li>
-                                    <li>O acessório foi desenvolvido para cães destruidores e brincalhões.</li>
+                                    <li>O acessório foi desenvolvido para cães destruidores e brincalhões;</li>
+                                    <li>Material resistente;</li>
+                                    <li>Design ergonômico.</li>
                                 </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 149,99</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="149.99">R$ 149,99</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 10 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto10.jpg" class="card-img-top" alt="Produto 10: Grama para felinos">
-                            <div class="card-body">
-                                <h5 class="card-title">Graminha para Gatos, Ipet Green 50g</h5>
+                    </article>
+
+                    <!-- Produto 11 -->
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto11.jpg" class="card-img-top"
+                                    alt="Graminha para Gatos, Ipet Green 50g" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Graminha para Gatos, Ipet Green 50g</h3>
                                 <ul class="card-text">
                                     <li>Ideal para ebulição das Bolas de Pêlos;</li>
                                     <li>Melhora do sistema imunológico;</li>
                                     <li>Desintoxica o fígado e o sistema digestivo;</li>
                                     <li>Contém semente de alpiste, trigo e paiço.</li>
                                 </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 17,90</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="17.90">R$ 17,90</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Produto 11 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto11.jpg" class="card-img-top"
-                                alt="Produto 11: Ossinho plastico para cães">
-                            <div class="card-body">
-                                <h5 class="card-title">Ossinho Espacial Fumê</h5>
-                                <ul class="card-text">
-                                    <li>Produzido com PVC virgem de alta qualidade;</li>
-                                    <li>Cor Translucida;</li>
-                                    <li>Atóxico e sem cheiro;</li>
-                                    <li>Satisfaz o instinto de roer com segurança, limpa os dentes, estimula
-                                        brincadeiras.</li>
-                                </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 19,99</span>
-                                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
+
                     <!-- Produto 12 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="../img/produto12.jpg" class="card-img-top"
-                                alt="Produto 12: Ração Úmida Para Cachorros em Sachê marca 'Cesar'">
-                            <div class="card-body">
-                                <h5 class="card-title">Ração Úmida Para Cachorros Cesar Sachê Cortes Selecionados Filé
-                                    Mignon Adultos 85g</h5>
+                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                        <div class="card shadow-sm w-100">
+                            <figure>
+                                <img src="../img/produto12.jpg" class="card-img-top"
+                                    alt="Ração Úmida Para Cachorros Cesar" itemprop="image">
+                            </figure>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title" itemprop="name">Ração Úmida Para Cachorros Cesar Sachê Cortes
+                                    Selecionados Filé Mignon Adultos 85g</h3>
                                 <ul class="card-text">
                                     <li>Alimento Super Premium 100% completo e balanceado para cães adultos;</li>
                                     <li>Sem conservantes ou corantes artificiais;</li>
-                                    <li>Deliciosos pedacinhos feitos com ingredientes selecionados.</li>
+                                    <li>Deliciosos pedacinhos feitos com ingredientes selecionados;</li>
+                                    <li>Sabor de filé mignon.</li>
                                 </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">R$ 3,19</span>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="text-muted" itemprop="offers" itemscope
+                                        itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="BRL">
+                                        <span itemprop="price" content="3.19">R$ 3,19</span>
+                                    </span>
                                     <a href="#" class="btn btn-primary"><i class="fa-solid fa-paw"></i> Comprar</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Fim secção produtos e serviços -->
 
-    <!--  Rodapé -->
-    <footer class="bg-dark text-light py-3">
+    <footer role="contentinfo" class="bg-dark text-light py-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <section class="col-md-6">
                     <p class="m-0">&copy; Lab Pet Shop - Todos os direitos reservados</p>
                     <p class="m-0">Desenvolvido por <a href="https://github.com/felipe-ssantos">N.F.S.S</a></p>
-                </div>
-                <div class="col-md-6 text-md-right">
+                </section>
+                <address class="col-md-6 text-md-right">
                     <p class="m-0">Av. Pres. Castelo Branco, 1795 - Pari, São Paulo - SP, 03035-050, Brasil</p>
-                    <p class="m-0">Telefone: +55 (11) 0000-0000</p>
-                    <!-- icones de rede sociais -->
-                    <div class="social-icons mt-2">
-                        <a href="#" target="_blank"><i class="fab fa-instagram fa-lg" style="color: #fff;"></i></a>
-                        &nbsp;&nbsp;
-                        <a href="#" target="_blank"><i class="fab fa-youtube fa-lg" style="color: #fff;"></i></a>
-                        &nbsp;&nbsp;
-                        <a href="#" target="_blank"><i class="fab fa-facebook fa-lg" style="color: #fff;"></i></a>
-                    </div>
-                </div>
+                    <p class="m-0">Telefone: <a href="tel:+551100000000">+55 (11) 0000-0000</a></p>
+                    <nav class="social-icons mt-2" aria-label="Redes Sociais">
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                    </nav>
+                </address>
             </div>
         </div>
     </footer>
-    <!-- Bootstrap JS -->
+
+    <!-- Optional Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Script fontawesome para icons -->
-    <script src="https://kit.fontawesome.com/eff067e088.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

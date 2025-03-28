@@ -11,29 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- icons -->
     <link rel="stylesheet" href="https://kit.fontawesome.com/eff067e088.css" crossorigin="anonymous">
-    <!-- Style CSS personal -->
+    <!-- Style -->
     <link rel="stylesheet" href="./css/style.css">
-
-    <!-- 
-        Estilos de acordo com a documentação do Bootstrap.
-        https://getbootstrap.com/docs/4.3/getting-started/introduction/
-        
-        **As histórias, logotipos e informações contidas nesse projeto são fictícias, criadas apenas por motivos didáticos ou acadêmicos.**
-        
-        Parte das imagens utilizadas nesse projeto são gratuítas e extraídas do site: https://unsplash.com/
-
-        Vídeo gratuíto extraído do site: https://www.videvo.net/
-    -->
-
 </head>
 
 <body>
     <!-- Menu -->
-    <header>
+    <header class="main-header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./img/logo-labpetshop-branco.png" alt="Logo da Loja Lab Pet Shop"> <!-- Logotipo -->
+                <a class="navbar-brand" href="index.html" title="Lab Pet Shop">
+                    <img src="./img/logo-labpetshop-branco.png" alt="Logo da Loja Lab Pet Shop" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,13 +33,13 @@
                             <a class="nav-link active" href="../index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/produtos.html">Produtos &amp; Serviços</a>
+                            <a class="nav-link" href="./pages/produtos.html">Produtos & Serviços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contato.html">Contato</a>
                         </li>
                         <!-- Barra de pesquisa -->
-                        <li class="nav-item" style="margin: 0 8px;">
+                        <li class="nav-item search-item">
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2 search-input" type="search" placeholder="Pesquisar"
                                     aria-label="Pesquisar">
@@ -63,162 +51,145 @@
             </div>
         </nav>
     </header>
-    <!-- Fim menu -->
 
-    <!-- Slide | Tags 'd-block' e 'w-100' para manter responsividade das imagens -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="./img/slide-01.jpeg"
-                    alt="Imagem de um cão na cor marrom com a língua para fora.">
+    <!-- Slide -->
+    <section class="main-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/slide-01.jpeg"
+                        alt="Imagem de um cão na cor marrom com a língua para fora.">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/slide-02.jpeg" alt="Imagem de um gato com olhos amarelos.">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/slid-03.jpeg"
+                        alt="Imagem de uma mulher oriental apontando dedo para seu cão.">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./img/slide-02.jpeg" alt="Imagem de um gato com olhos amarelos.">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./img/slid-03.jpeg"
-                    alt="Imagem de uma mulher oriental apontando dedo para seu cão.">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" title="Anterior">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" title="Próximo">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <!-- <span class="sr-only">Anterior</span> -->
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <!-- <span class="sr-only">Próximo</span> -->
-        </a>
-    </div>
-    <!-- Fim do slide -->
+    </section>
 
     <!-- Sobre a empresa -->
-    <div class="container my-4">
-        <div class="jumbotron">
+    <main class="container my-4">
+        <section class="jumbotron">
             <h1 class="display-4">Bem-vindo à Lab Pet Shop</h1>
             <p class="lead"><i>"Aqui proporcionamos auto-estima e qualidade de vida para nossos clientes e
                     seus bichinhos".</i></p>
             <hr class="my-4">
             <p>Você vai encontrar tudo o que precisa para cuidar do seu animal de estimação com a gente!</p>
-            <h2>Sobre</h2>
-            <p>Lozalizada na cidade de São Paulo a <strong>Lab Pet Shop</strong> vem para oferecer produtos
-                e serviços a animais de estimação, incluindo cães, gatos, aves, peixes, répteis e outros
-                animais exóticos. Além de vender alimentos, brinquedos e acessórios para animais de
-                estimação. Também temos serviços como banho e tosa, tratamento veterinário, hospedagem e
-                delivery. Fundada em 2023, a Lab Pet Shop já é destaque na cidade e conquista novos clientes
-                a cada dia.</p>
+
+            <article>
+                <h2>Sobre</h2>
+                <p>Localizada na cidade de São Paulo a <strong>Lab Pet Shop</strong> vem para oferecer produtos
+                    e serviços a animais de estimação, incluindo cães, gatos, aves, peixes, répteis e outros
+                    animais exóticos. Além de vender alimentos, brinquedos e acessórios para animais de
+                    estimação. Também temos serviços como banho e tosa, tratamento veterinário, hospedagem e
+                    delivery. Fundada em 2023, a Lab Pet Shop já é destaque na cidade e conquista novos clientes
+                    a cada dia.</p>
+            </article>
+
             <!-- Vídeo -->
-            <h3 class="display-6 text-center p-3">Vídeo institucional</h3>
-            <div class="embed-responsive embed-responsive-21by9">
-                <video class="embed-responsive-item"
-                    src="https://media.istockphoto.com/id/1203734572/pt/v%C3%ADdeo/teenager-with-dog-of-chihuahua.mp4?s=mp4-640x640-is&k=20&c=L_t2kxYAI3ZHSgVTt68PgaBg18OWpdhe5MFfqkYtHiI="
-                    autoplay controls></video>
-            </div>
-        </div>
+            <section class="video-section">
+                <h3 class="display-6 text-center p-3">Vídeo institucional</h3>
+                <div class="embed-responsive embed-responsive-21by9">
+                    <video class="embed-responsive-item"
+                        src="https://media.istockphoto.com/id/1203734572/pt/v%C3%ADdeo/teenager-with-dog-of-chihuahua.mp4?s=mp4-640x640-is&k=20&c=L_t2kxYAI3ZHSgVTt68PgaBg18OWpdhe5MFfqkYtHiI="
+                        autoplay controls></video>
+                </div>
+            </section>
+        </section>
+
         <!-- Depoimentos -->
-        <aside>
-            <section>
-                <!-- Depoimento fictício 1 -->
-                <div class="container my-4">
-                    <h3 class="mb-4">O que estão falando da LABPETSHOP...</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                <img src="./img/avatar1.jpg" class="card-img-top img-fluid rounded"
-                                    alt="Imagem do avatar 1 mulher segurando um cão">
-                                <div class="card-body">
-                                    <p class="card-text">"O LabPetShop é incrível! Levei meu cachorro para banho e tosa
-                                        e
-                                        fiquei muito satisfeita com o atendimento. Os profissionais foram muito gentis e
-                                        cuidadosos com meu cão, que voltou para casa cheiroso e bem cuidado. A loja
-                                        oferece
-                                        muita variedade de produtos e a atenção dos funcionários é ótima. Com certeza,
-                                        voltarei a fazer negócios com eles!"</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        </div>
-                                        <small class="text-muted"><i class="fa-solid fa-paw"></i> MARIA</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Depoimento fictício 3 -->
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                <img src="./img/avatar2.jpg" class="card-img-top img-fluid rounded"
-                                    alt="Imagem do avatar 2 homem segurando um cão">
-                                <div class="card-body">
-                                    <p class="card-text">"Levei meu cachorro ao LabPetShop por um problema de saúde e
-                                        fiquei
-                                        impressionado com a atenção e cuidado da equipe, que o deixou confortável
-                                        durante a
-                                        consulta. A veterinária foi atenciosa e explicou tudo que eu precisava saber.
-                                        Recomendo o LabPetShop, pois, possue um atendimento de alta qualidade."
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        </div>
-                                        <small class="text-muted"><i class="fa-solid fa-paw"></i> JOÃO</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Depoimento fictício 3 -->
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm testimonial-img">
-                                <img src="./img/avatar3.jpg" class="card-img-top img-fluid rounded"
-                                    style="max-width: 350px; max-height: 350px;"
-                                    alt="Imagem do avatar 3 mulher segurando um cão">
-                                <div class="card-body">
-                                    <p class="card-text">
-                                    </p>"O LabPetShop é excelente! Levo meu cachorro para banho e tosa há anos e nunca
-                                    me
-                                    decepcionei. A equipe é muito amigável e eficiente, cuidando muito bem do meu
-                                    cãozinho.
-                                    As promoções são ótimas e ajudam a economizar dinheiro. Se ainda não conhece o
-                                    LabPetShop, não perca mais tempo e visite-os agora mesmo!"
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        </div>
-                                        <small class="text-muted"><i class="fa-solid fa-paw"></i> ANA</small>
-                                    </div>
-                                </div>
+        <section class="testimonials">
+            <h3 class="mb-4">O que estão falando da LABPETSHOP...</h3>
+            <div class="row">
+                <article class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./img/avatar1.jpg" class="card-img-top img-fluid rounded"
+                            alt="Imagem do avatar 1 mulher segurando um cão">
+                        <div class="card-body">
+                            <p class="card-text">"O LabPetShop é incrível! Levei meu cachorro para banho e tosa
+                                e fiquei muito satisfeita com o atendimento. Os profissionais foram muito gentis e
+                                cuidadosos com meu cão, que voltou para casa cheiroso e bem cuidado. A loja
+                                oferece muita variedade de produtos e a atenção dos funcionários é ótima. Com certeza,
+                                voltarei a fazer negócios com eles!"</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fa-solid fa-paw"></i> MARIA</small>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </aside>
-    </div>
-    <!-- Fim da seção depoimentos -->
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./img/avatar2.jpg" class="card-img-top img-fluid rounded"
+                            alt="Imagem do avatar 2 homem segurando um cão">
+                        <div class="card-body">
+                            <p class="card-text">"Levei meu cachorro ao LabPetShop por um problema de saúde e
+                                fiquei impressionado com a atenção e cuidado da equipe, que o deixou confortável
+                                durante a consulta. A veterinária foi atenciosa e explicou tudo que eu precisava saber.
+                                Recomendo o LabPetShop, pois, possui um atendimento de alta qualidade."</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fa-solid fa-paw"></i> JOÃO</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./img/avatar3.jpg" class="card-img-top img-fluid rounded"
+                            alt="Imagem do avatar 3 mulher segurando um cão">
+                        <div class="card-body">
+                            <p class="card-text">"O LabPetShop é excelente! Levo meu cachorro para banho e tosa há anos
+                                e nunca
+                                me decepcionei. A equipe é muito amigável e eficiente, cuidando muito bem do meu
+                                cãozinho. As promoções são ótimas e ajudam a economizar dinheiro. Se ainda não conhece o
+                                LabPetShop, não perca mais tempo e visite-os agora mesmo!"</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fa-solid fa-paw"></i> ANA</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!--  Rodapé -->
     <footer class="bg-dark text-light py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="m-0">&copy; Lab Pet Shop - Todos os direitos reservados</p>
-                    <p class="m-0">Desenvolvido por <a href="https://github.com/felipe-ssantos">N.F.S.S</a></p>
+                    <p class="m-0">© Lab Pet Shop - Todos os direitos reservados</p>
+                    <p class="m-0">Desenvolvido por <a href="https://github.com/felipe-ssantos" title="Perfil do desenvolvedor">N.F.S.S</a></p>
                 </div>
-                <div class="col-md-6 text-md-right">
+                <div class="col-md-6 text-md-right contact-info">
                     <p class="m-0">Av. Pres. Castelo Branco, 1795 - Pari, São Paulo - SP, 03035-050, Brasil</p>
                     <p class="m-0">Telefone: +55 (11) 0000-0000</p>
-                    <!-- icones de rede sociais -->
                     <div class="social-icons mt-2">
-                        <a href="#" target="_blank"><i class="fab fa-instagram fa-lg" style="color: #fff;"></i></a>
-                        &nbsp;&nbsp;
-                        <a href="#" target="_blank"><i class="fab fa-youtube fa-lg" style="color: #fff;"></i></a>
-                        &nbsp;&nbsp;
-                        <a href="#" target="_blank"><i class="fab fa-facebook fa-lg" style="color: #fff;"></i></a>
+                        <a href="#" target="_blank" title="Siga-nos no Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" target="_blank" title="Inscreva-se no YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" target="_blank" title="Curta nossa página no Facebook"><i class="fab fa-facebook fa-lg"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
