@@ -27,6 +27,28 @@ video {
   color: #ddd;
 }
 
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .navbar-nav .search-container {
     width: 100%;
@@ -40,5 +62,15 @@ video {
 
   .navbar-nav .search-container input {
     flex-grow: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 150px;
+  }
+
+  .card-title {
+    font-size: 1rem;
   }
 }
