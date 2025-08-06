@@ -1,63 +1,62 @@
+# 🐾 Lab Pet Shop - Projeto Universitário
+
+![GitHub last commit](https://img.shields.io/github/last-commit/felipe-ssantos/lab-petshop)  
+![GitHub repo size](https://img.shields.io/github/repo-size/felipe-ssantos/lab-petshop)  
+![GitHub license](https://img.shields.io/github/license/felipe-ssantos/lab-petshop)  
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)  
+
 <p align="center">
-  <img alt="logo da labpetshop" src="./img/logo-labpetshop-branco.png">
+  <img alt="Logo do Lab Pet Shop" src="./img/logo-labpetshop-branco.png" width="300">
 </p>
 
-## 📷 Screenshots
+## 🖥️ Demonstração
 
 <h1 align="center">
-    <img alt="Página de divulgação LABPETSHOP" title="LABPETSHOP" src="./img/home.png" />
+    <img alt="Página inicial" title="Lab Pet Shop" src="./img/home.png" width="85%">
 </h1>
 
-------
+## 🔍 Sobre o Projeto
 
-📌 **Status:** Concluído
+Projeto acadêmico desenvolvido para a Universidade Anhembi Morumbi, simulando um website completo para Pet Shop utilizando:
 
-------
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+</p>
 
-## 💻 Sobre o projeto
+### ✨ Principais Funcionalidades
 
-Esse projeto foi desenvolvido como parte de uma atividade proposta pela Universidade Anhembi Morumbi, com o objetivo de construir uma aplicação Web, ou seja, construir um site para um PetShop, utilizando as tecnologias HTML5, CSS3 e Bootstrap. O site inclui diversas seções, conforme as especificações da atividade.
+- **12 Produtos** com cards detalhados
+- **3 Serviços** (banho, tosa, veterinário)
+- Página de **contato** completa
+- Seção **"Sobre Nós"**
+- **Depoimentos** de clientes
 
-### Especificações
+## 🛠️ Tecnologias
 
-- Seção de Produtos e Serviços
-  - A seção de produtos e serviços deve incluir pelo menos 10 produtos e 3 serviços disponíveis no PetShop. Para isso, foi utilizada uma combinação de componentes do Bootstrap e HTML. O layout e o estilo foram definidos em um arquivo CSS externo.
-- Contato da Loja
-  - A seção de contato da loja deve incluir o endereço, e-mail e telefone. Essas informações foram incluídas em uma seção específica, utilizando as tags HTML apropriadas e estilo definido no arquivo CSS externo.
- - História do PetShop
-    - A seção que explica a história do PetShop foi construída utilizando tags HTML apropriadas e estilo definido no arquivo CSS externo. Foi incluída uma breve história do PetShop, com o objetivo de apresentar a empresa aos clientes em potencial.
- - Depoimentos de Clientes
-    - A seção de depoimentos de clientes foi incluída com o objetivo de transmitir confiança aos clientes em potencial. Foram incluídos depoimentos fictícios utilizando as tags HTML apropriadas e estilo definido no arquivo CSS externo.
+- ![HTML5](https://img.shields.io/badge/HTML-5-orange)
+- ![CSS3](https://img.shields.io/badge/CSS-3-blue) 
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-4.3-purple)
+- ![Font Awesome](https://img.shields.io/badge/Font_Awesome-Icons-528DD7)
+
+## 📌 Seções
+
+| Seção        | Descrição                   |
+| ------------ | --------------------------- |
+| 🏠 Home      | Página inicial com destaque |
+| 🛍️ Produtos | 12 produtos com detalhes    |
+| 🔧 Serviços  | 3 serviços oferecidos       |
+| 📞 Contato   | Formulário e informações    |
+
+## 📄 Licença
+
+![MIT License](https://img.shields.io/badge/License-MIT-blue)  
+Consulte o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+<div align="center">
   
- ---
- 
- ## 🛠 Ferramentas
-
-- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-
----
-
-## 🎨 Framework utilizado
-
-- [Bootstrap 4.3 CDN](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-
----
-
-## Autor
-
-Este projeto foi desenvolvido por N.F.S.S. Você pode encontrar mais informações sobre mim em [https://github.com/felipe-ssantos](https://github.com/felipe-ssantos).
-
----
-
-## Licença
-
-Unlicense
-
----
-
-## 📝 License
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
-
----
+  <p>© 2023 Lab Pet Shop (Projeto Acadêmico) Universidade Anhembi Morumbi</p>
+</div>
