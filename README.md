@@ -8,7 +8,7 @@
 </p>
 
 
-<p align="center">
+<p align="left">
   <img alt="Logo do Lab Pet Shop" src="./img/logo-labpetshop-branco.png" width="300">
 </p>
 
@@ -22,7 +22,7 @@
 
 Projeto acadêmico desenvolvido para a Universidade Anhembi Morumbi, simulando um website completo para Pet Shop utilizando:
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
@@ -38,7 +38,7 @@ Projeto acadêmico desenvolvido para a Universidade Anhembi Morumbi, simulando u
 
 ## 🛠️ Tecnologias
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/HTML-5-orange" alt="HTML5" style="margin: 0 5px;">
   <img src="https://img.shields.io/badge/CSS-3-blue" alt="CSS3" style="margin: 0 5px;"> 
   <img src="https://img.shields.io/badge/Bootstrap-4.3-purple" alt="Bootstrap" style="margin: 0 5px;">
