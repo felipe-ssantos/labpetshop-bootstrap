@@ -22,7 +22,7 @@
 
 Projeto acadêmico desenvolvido para a Universidade Anhembi Morumbi, simulando um website completo para Pet Shop utilizando:
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
@@ -38,10 +38,12 @@ Projeto acadêmico desenvolvido para a Universidade Anhembi Morumbi, simulando u
 
 ## 🛠️ Tecnologias
 
-- ![HTML5](https://img.shields.io/badge/HTML-5-orange)
-- ![CSS3](https://img.shields.io/badge/CSS-3-blue) 
-- ![Bootstrap](https://img.shields.io/badge/Bootstrap-4.3-purple)
-- ![Font Awesome](https://img.shields.io/badge/Font_Awesome-Icons-528DD7)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-5-orange" alt="HTML5" style="margin: 0 5px;">
+  <img src="https://img.shields.io/badge/CSS-3-blue" alt="CSS3" style="margin: 0 5px;"> 
+  <img src="https://img.shields.io/badge/Bootstrap-4.3-purple" alt="Bootstrap" style="margin: 0 5px;">
+  <img src="https://img.shields.io/badge/Font_Awesome-Icons-528DD7" alt="Font Awesome" style="margin: 0 5px;">
+</p>
 
 ## 📌 Seções
 
