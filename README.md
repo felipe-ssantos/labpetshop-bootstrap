@@ -1,9 +1,11 @@
 # 🐾 Lab Pet Shop - Projeto Universitário
 
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/felipe-ssantos/lab-petshop)  
 ![GitHub repo size](https://img.shields.io/github/repo-size/felipe-ssantos/lab-petshop)  
 ![GitHub license](https://img.shields.io/github/license/felipe-ssantos/lab-petshop)  
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)  
+
 
 <p align="center">
   <img alt="Logo do Lab Pet Shop" src="./img/logo-labpetshop-branco.png" width="300">
