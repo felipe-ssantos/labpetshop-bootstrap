@@ -8,7 +8,7 @@
 </p>
 
 
-<p align="left">
+<p align="center">
   <img alt="Logo do Lab Pet Shop" src="./img/logo-labpetshop-branco.png" width="300">
 </p>
 
