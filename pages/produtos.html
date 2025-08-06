@@ -14,8 +14,8 @@
 
 <body>
     <!-- Menu -->
-    <header role="banner">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/logo-labpetshop-branco.png" alt="Logo da Loja Lab Pet Shop">
@@ -49,7 +49,7 @@
     <!-- Fim menu -->
 
     <!-- Seção serviços -->
-    <main role="main">
+    <main>
         <section class="services py-3 py-md-5">
             <div class="container">
                 <div class="row align-items-center">
@@ -108,7 +108,8 @@
                     </article>
 
                     <!-- Produto 2 -->
-                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex mb-4" itemscope
+                        itemtype="http://schema.org/Product">
                         <div class="card shadow-sm w-100">
                             <figure>
                                 <img src="../img/produto02.jpg" class="card-img-top img-fluid"
@@ -135,7 +136,8 @@
                     </article>
 
                     <!-- Produto 3 -->
-                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex mb-4" itemscope
+                        itemtype="http://schema.org/Product">
                         <div class="card shadow-sm w-100">
                             <figure>
                                 <img src="../img/produto03.jpg" class="card-img-top img-fluid"
@@ -163,7 +165,8 @@
                     </article>
 
                     <!-- Produto 4 -->
-                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex mb-4" itemscope
+                        itemtype="http://schema.org/Product">
                         <div class="card shadow-sm w-100">
                             <figure>
                                 <img src="../img/produto04.jpg" class="card-img-top img-fluid"
@@ -190,7 +193,8 @@
                     </article>
 
                     <!-- Produto 5 -->
-                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex mb-4" itemscope
+                        itemtype="http://schema.org/Product">
                         <div class="card shadow-sm w-100">
                             <figure>
                                 <img src="../img/produto05.jpg" class="card-img-top img-fluid"
@@ -218,7 +222,8 @@
                     </article>
 
                     <!-- Produto 6 -->
-                    <article class="col-md-4 d-flex mb-4" itemscope itemtype="http://schema.org/Product">
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex mb-4" itemscope
+                        itemtype="http://schema.org/Product">
                         <div class="card shadow-sm w-100">
                             <figure>
                                 <img src="../img/produto06.jpg" class="card-img-top img-fluid"
@@ -413,17 +418,21 @@
         </section>
     </main>
 
-    <footer role="contentinfo" class="bg-dark text-light py-3">
+    <footer class="bg-dark text-light py-3">
         <div class="container">
             <div class="row">
-                <section class="col-md-6">
+                <div class="col-md-6">
+                    <h2 class="h6">Informações da Empresa</h2>
                     <p class="m-0">&copy; Lab Pet Shop - Todos os direitos reservados</p>
                     <p class="m-0">Desenvolvido por <a href="https://github.com/felipe-ssantos">N.F.S.S</a></p>
-                </section>
-                <address class="col-md-6 text-md-right">
-                    <p class="m-0">Av. Pres. Castelo Branco, 1795 - Pari, São Paulo - SP, 03035-050, Brasil</p>
-                    <p class="m-0">Telefone: <a href="tel:+551100000000">+55 (11) 0000-0000</a></p>
-                    <nav class="social-icons mt-2" aria-label="Redes Sociais">
+                </div>
+                <div class="col-md-6 text-md-right contact-info">
+                    <h2 class="h6">Contato</h2>
+                    <address>
+                        <p class="m-0">Av. Pres. Castelo Branco, 1795 - Pari, São Paulo - SP, 03035-050, Brasil</p>
+                        <p class="m-0">Telefone: <a href="tel:+551100000000">+55 (11) 0000-0000</a></p>
+                    </address>
+                    <div class="social-icons mt-2" aria-label="Redes Sociais">
                         <a href="#" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram fa-lg"></i>
                         </a>
@@ -433,8 +442,8 @@
                         <a href="#" target="_blank" aria-label="Facebook">
                             <i class="fab fa-facebook fa-lg"></i>
                         </a>
-                    </nav>
-                </address>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
