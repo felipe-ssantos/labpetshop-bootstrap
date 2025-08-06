@@ -52,8 +52,7 @@ Projeto acadêmico desenvolvido para a Universidade Anhembi Morumbi, simulando u
 | 📞 Contato   | Formulário e informações    |
 
 ## 📄 Licença
-
-![MIT License](https://img.shields.io/badge/License-MIT-blue)  
+  
 Consulte o arquivo [LICENSE](LICENSE) para detalhes.
 
 ---
