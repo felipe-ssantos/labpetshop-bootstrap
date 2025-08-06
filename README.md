@@ -1,10 +1,11 @@
 # 🐾 Lab Pet Shop - Projeto Universitário
 
-
-![GitHub last commit](https://img.shields.io/github/last-commit/felipe-ssantos/labpetshop-bootstrap)  
-![GitHub repo size](https://img.shields.io/github/repo-size/felipe-ssantos/labpetshop-bootstrap)  
-![GitHub license](https://img.shields.io/github/license/felipe-ssantos/labpetshop-bootstrap)  
-![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)  
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/felipe-ssantos/labpetshop-bootstrap" alt="Último commit" style="margin: 0 5px;">
+  <img src="https://img.shields.io/github/repo-size/felipe-ssantos/labpetshop-bootstrap" alt="Tamanho do repositório" style="margin: 0 5px;">
+  <img src="https://img.shields.io/github/license/felipe-ssantos/labpetshop-bootstrap" alt="Licença" style="margin: 0 5px;">
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen" alt="Status" style="margin: 0 5px;">
+</p>
 
 
 <p align="center">
